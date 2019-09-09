@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pickles Chat</title>
+    <style>
+        input[type='submit'], button, [aria-label] {
+            cursor: pointer;
+        }
+
+        #spoiler {
+            display: none;
+        }
+
+        table {
+            font-family: Arial, sans-serif;
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #0066CC;
+            color: white;
+        }
+
+        td {
+            border: 1px solid;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pickles Chat</h1>
+    <h2 id="RoomName">Welcome </h2>
+    
+    <form action="javascript:void(0);" method="POST" onsubmit="addMessage()">
+        <textarea id="ChatMessages" rows="30" cols="100"></textarea>
+        <br><br>
+        <input type="text" size="91" id="new_message" placeholder="Type Message Here">
+        <input type="submit" value="Send">
+    </form>
+    
+    <br><br>
+    <table>
+        <tr>
+            <td style="background-color: bisque;cursor: pointer;">
+                <a style="text-decoration: none; font-size: 16px; color: cornflowerblue;" href="PicklesChat.html"> <b>CHANGE/CREATE CHAT ROOM</b></a>
+            </td>
+        </tr>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="ChatRoom.js"></script>
+</body>
+</html>
